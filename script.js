@@ -227,6 +227,5 @@ function render() {
   crowd.forEach((peep) => {
     peep.render(ctx);
   });
-
   ctx.restore();
 }
