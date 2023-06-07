@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <script>
-        var typed=new Typed('.auto-type', {
-          strings: ["Welcome to Amy's Portfolio"],
-          typeSpeed: 200,
-          backSpeed: 200,
-          loop: true
-        })
-    </script>
-    <canvas id = "canvas"></canvas>
-    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'> </script>
-    <script  src="./script.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="./style.css">
+        <script defer src = "./script.js"></script>
+    </head>
+    <body>
+        <section class = "hidden">
+            <h2 class="innerText"><span class="auto-type"></span></h2>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script>
+                var typed=new Typed('.auto-type', {
+                strings: ["In the beginning, there was nothing."],
+                typeSpeed: 45,
+                backSpeed: 200,
+                loop: true
+                })
+            </script>
+        </section>
+    
+        <section class= "hidden">
+            <canvas id = "canvas"></canvas>
+            <script src = 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'> </script>
+            <script  src="./peeps.js"></script>
+        </section>
+
+        <section class = "hidden">
+            <p>
+                RANDOM TET TO SEE WHAT HAPPENS
+            </p>
+        </section>
+
+        <section class = "hidden">
+            <p>
+                RANDOM TET TO SEE WHAT HAPPENS
+            </p>
+        </section>
+
+        <section class = "hidden">
+            <p>
+                RANDOM TET TO SEE WHAT HAPPENS
+            </p>
+        </section>
+        <section class = "hidden">
+            <p>
+                RANDOM TET TO SEE WHAT HAPPENS
+            </p>
+        </section>
+    </body>
 </html>

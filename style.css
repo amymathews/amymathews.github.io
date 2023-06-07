@@ -3,13 +3,38 @@ html, body {
   }
   body {
     font-family: system-ui;
-    background: #f06d06;
+    color: white;
+    background-color: orange;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+   
+  }
+
+  #intro{
+    font-family: system-ui;
     color: white;
     text-align: center;
-   
+    background-image: url(images/alien.jpeg);
   }
   
   #canvas {
     width: 100%;
     height: 100%;
+  }
+
+  section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+  }
+
+  .hidden {
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  .show {
+    opacity: 1;
   }
