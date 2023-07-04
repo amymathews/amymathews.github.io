@@ -1,8 +1,19 @@
+@import "portfolYOU";
 html, body {
     height: 100%;
   }
+  /*
+  * -> applies to all tags
+
+  */
+
+  *{
+    /* color: orange; */
+    /* background-color: lightgreen; */
+  }
+  */
   body {
-    font-family: system-ui;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     background-color: orange;
     text-align: center;
@@ -24,7 +35,7 @@ html, body {
 
   section {
     display: grid;
-    /* place-items: center; */
+    place-items: center;
     align-content: center;
     min-height: 100vh;
   }

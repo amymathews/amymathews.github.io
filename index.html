@@ -5,24 +5,68 @@
         <title>Home</title>
         <link rel="stylesheet" href="./style.css">
         <script defer src = "./script.js"></script>
+
+         <!-- Math Latex Support -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+
+        <!-- Theme style -->
+        <script src="/theme.js"></script>
+
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+        <!-- Animate CSS CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/assets/css/style.css">
+
     </head>
     <body>
+
+        <main class="flex-shrink-0 container mt-5">
+            <nav class="navbar navbar-expand-lg navbar-themed">
+        
+          <a class="navbar-brand" href="/"></a>
+        
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-1x fa-bars text-themed"></i>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link "></a>
+        
+              <a class="nav-item nav-link " href="/about/">about</a>
+        
+              <a class="nav-item nav-link " href="/blog/">blog</a>
+        
+              <a class="nav-item nav-link " href="/notes/">notes</a>
+        
+              <a class="nav-item nav-link " href="/projects/">projects</a>
+        
+              <a class="nav-item nav-link " href="/experience/">experience</a>
+        
+              <a class="nav-item nav-link " href="https://drive.google.com/file/d/1nxD0JIPxPSoM7pxtSQ-0P4EegFgnIoks/view?usp=sharing" target="_blank">resume</a>
+        
+              
+        
+              <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+            </div>
+          </div>
+        
+        </nav>
         
         <section class = "hidden">
-            <section class= "stars">
-                <div class = "star star1"></div>
-                <div class = "star star2"></div>
-                <div class = "star star3"></div>
-                <div class = "star star4"></div>
-                <div class = "star star5"></div>
-                <div class = "star star6"></div>
-                <div class = "star star7"></div>
-                <div class = "star star8"></div>
-
-
-
-                <h2 class="innerText"><span class="auto-type1"></span></h2>
-                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        
+                <h2 class="innerText"><span class="auto-type1" style="text-align: centerx;"></span></h2>
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
                 <script>
                     var typed=new Typed('.auto-type1', {
@@ -32,7 +76,6 @@
                     loop: true
                     })
                 </script>  
-            </section>             
         </section>   
 
         <section class= "hidden">
