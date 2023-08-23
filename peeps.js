@@ -145,6 +145,37 @@ function init() {
 
   gsap.ticker.add(render);
   window.addEventListener("resize", resize);
+  loopPeeps();
+}
+
+function loopPeeps() {
+  const fadeOutDuration = 10; // Duration of the fade-out effect in seconds
+
+  gsap.to(crowd, {
+    duration: fadeOutDuration,
+    opacity: 0, // Gradually set the opacity of peeps to 0
+    onComplete: () => {
+      crowd.forEach((peep) => {
+        peep.walk.kill();
+      });
+      crowd.length = 0;
+      availablePeeps.length = 0;
+      stopLoop(); // Call the function to stop the loop and show Amy image
+    }
+  });
+}
+
+// ... (other code remains the same)
+
+
+
+
+
+
+
+function stopLoop() {
+  document.getElementById("canvas").remove(); // Remove the canvas
+  document.getElementById("amy").classList.remove("hidden"); // Show Amy image
 }
 
 function createPeeps() {

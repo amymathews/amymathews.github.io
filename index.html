@@ -16,9 +16,9 @@
         <!-- Theme style -->
         <script src="/theme.js"></script>
 
-        <!-- Font Awesome CDN -->
+        <!-- Font Awesome CDN 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
-
+-->
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 
@@ -27,6 +27,19 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/assets/css/style.css">
+
+
+        <style>
+            /* Center the section */
+            .centered-section {
+                display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 150vh;
+            }
+        </style>
+
+        
 
     </head>
     <body>
@@ -63,22 +76,23 @@
           </div>
         
         </nav>
-        
+        <div class="centered-section">
         <section class = "hidden">
         
-                <h2 class="innerText"><span class="auto-type1" style="text-align: centerx;"></span></h2>
+                <h2 class="innerText"><span class="auto-type1" style="text-align: center;"></span></h2>
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
                 <script>
                     var typed=new Typed('.auto-type1', {
                     strings: ["In the beginning, there was nothing."],
                     typeSpeed: 45,
                     backSpeed: 200,
-                    loop: true
+                    loop: false
                     })
                 </script>  
         </section>   
+    </div>
 
-        <section class= "hidden">
+        <section class= "hidden" id="animationSection">
         
             <h2 class="innerText"><span class="auto-type2"></span></h2>
             <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -88,7 +102,7 @@
                 strings: ["And then with a little html, css and javascript there were peeps "],
                 typeSpeed: 45,
                 backSpeed: 200,
-                loop: true
+                loop: false
                 })
             </script>
             <canvas id = "canvas"></canvas>
@@ -105,13 +119,16 @@
                 strings: ["And among the peeps - there was the creator"],
                 typeSpeed: 45,
                 backSpeed: 200,
-                loop: true
+                loop: false
                 })
             </script>
-            <p> <img src= "images/Amyop.png" alt="Amy" id ="amy" >
-                        Hey there! Welcome to my website. I'm Amy a fourth year student at UC Berkeley studying Electrical Engineering and Computer Sciences 🤖
+            <br>
+            <p style="font-size: larges;"> <img src= "images/Amyop.png" alt="Amy" id ="amy" >
+                        
+                    Hello and welcome to my personal website! I'm Amy, a fourth-year student at UC Berkeley studying Electrical Engineering and Computer Sciences. My journey has led me to a profound interest in product innovation and design, alongside my technical pursuits. This platform is a glimpse into my academic exploration and showcases my passion for combining technology and creativity. Thank you for visiting, and I hope you find my content engaging and insightful.
             </p>
             </section>
+            
 
         <section class = "hidden">
             <p>

@@ -49,10 +49,6 @@ html, body {
     opacity: 1;
   }
 
-  .stars {
-    poition: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background: #000200;
-  }
+p{
+  font-size: 25px;
+}
