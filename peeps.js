@@ -149,7 +149,7 @@ function init() {
 }
 
 function loopPeeps() {
-  const fadeOutDuration = 10; // Duration of the fade-out effect in seconds
+  const fadeOutDuration = 1000; // Duration of the fade-out effect in seconds
 
   gsap.to(crowd, {
     duration: fadeOutDuration,
