@@ -52,3 +52,15 @@ html, body {
 p{
   font-size: 25px;
 }
+.project-content {
+  background-color: white; /* Background color for the project tile content */
+  padding: 20px; /* Adjust padding as needed */
+  text-align: center; /* Center-align the content */
+  /* border: 1px solid #ccc;  Add borders or styling as desired */
+}
+
+.project-content img {
+  max-width: 100%; /* Ensure the image fits within its container */
+  border-radius: 20px;
+
+}
