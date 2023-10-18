@@ -147,5 +147,17 @@
                 RANDOM TET TO SEE WHAT HAPPENS
             </p> 
         </section>--> 
+        <script>
+            window.addEventListener('scroll', function() {
+                let scrollPosition = window.scrollY;
+                if (scrollPosition > this.lastScroll) {
+                    window.scrollBy(0, 1.5);
+                // } else {
+                //     window.scrollBy(0, -2);
+                }
+                this.lastScroll = scrollPosition;
+            });
+        </script>
+        
     </body>
 </html>
