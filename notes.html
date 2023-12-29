@@ -50,6 +50,9 @@
             cursor: pointer;
             color: blue;
         }
+        .indent-ul {
+            padding-left: 30px; /* Adjust the value as needed */
+        }
     </style>
     <script>
         function toggleNotes(id) {
@@ -99,7 +102,7 @@
 <div class="container">
     <div class="sidebar">
         <h1>Table of Contents</h1>
-        <ul>
+        <ul class="indent-ul">
             <li><a href="#relevant-articles">Relevant Articles</a></li>
             <li><a href="#books">Books</a></li>
             <li><a href="#talks">Talks</a></li>
@@ -113,7 +116,7 @@
         <section id="relevant-articles">
             <h1>Relevant Articles</h1>
             <!-- List of relevant articles -->
-            <ul>
+            <ul class="indent-ul">
                 <li onclick="toggleNotes('note1')">The only thing that matters - Marc Andreessen</li>
                 <div id="note1" class="notes">Team vs Product vs Market
                     - I find it intersting that Marc noted that the Market was the most imporant thing for the whole thing to work out. 
@@ -143,7 +146,7 @@
         <section id="books">
             <h1>Books</h1>
             <!-- List of books -->
-            <ul>
+            <ul class="indent-ul">
                 <li>Build - by Tony Fadell</li>
                 <li>Creative Selection - (Software Engineer's take on how Apple builds great book and story of iPhone - author was one of the core eng)</li>
                 <li>7 Powers - the only strategy book I've liked after Michael Porter's book. Rest is all rehash but this is good.</li>
@@ -160,7 +163,7 @@
         <section id="talks">
             <h1>Talks</h1>
             <!-- List of talks -->
-            <ul>
+            <ul class="indent-ul">
                 <li>Competition is for losers - Peter Thiel</li>
                 <li>Ties in very well with Jeff Bezos' focus on customer obsession (Amazon annual letters are amazing)</li>
                 <li>Steve Jobs - Focus is saying NO</li>
@@ -173,7 +176,7 @@
         <section id="ai-related-articles">
             <h1>AI Related Articles</h1>
             <!-- List of AI related articles -->
-            <ul>
+            <ul class="indent-ul">
                 <li>Yann LeCun - Cake Analogy</li>
                 <li>Self-supervised Learning: The Dark Matter of Intelligence</li>
                 <li>Robot Brain Podcast - Adam Bry Skydio (first 20 mins are relevant)</li>
